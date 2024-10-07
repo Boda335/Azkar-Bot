@@ -1,7 +1,7 @@
 module.exports = class UpdateChecker {
 
     static async checkVersion() {
-      fetch("https://api.github.com/repos/Boda335/Azkar_bot-V2/tags").then((res) => {
+      fetch("https://api.github.com/repos/Boda335/Azkar-Bot/tags").then((res) => {
         if (Math.floor(res.status / 100) !== 2) return console.warn("🔄  Failed to pull latest version from server".bgRed.big);
         res.json().then((json) => {
           // Assumign the format stays consistent (i.e. x.x.x)
