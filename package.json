@@ -1,6 +1,6 @@
 {
   "name": "azkar_bot",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Azkar Bot for discord",
   "main": "index.js",
   "scripts": {
