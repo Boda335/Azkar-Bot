@@ -30,6 +30,10 @@ function help(interaction) {
     .setURL(`https://discord.com/oauth2/authorize?client_id=1110669204295790703`)
     .setStyle("Link")
     .setLabel("Invite Me")
+  let btnRadio = new ButtonBuilder()
+    .setURL(`https://discord.com/oauth2/authorize?client_id=1235501446498353182`)
+    .setStyle("Link")
+    .setLabel("Quran Radio")
   let btnSupport = new ButtonBuilder()
     .setURL("https://discord.gg/Wn6z6yD7n3")
     .setStyle("Link")
@@ -39,7 +43,7 @@ function help(interaction) {
     .setStyle("Primary")
     .setLabel("Bot Status")
 
-  let row = new ActionRowBuilder().addComponents(btnInvite, btnSupport, btnStatus)
+  let row = new ActionRowBuilder().addComponents(btnInvite,btnRadio, btnSupport, btnStatus)
 
   return { embeds: [em], components: [row] }
 }

@@ -1,6 +1,6 @@
-﻿# Quran Radio
+﻿﻿# Azkar Bot
 
-## Discord bot Quran Radio 📻🥰
+## Discord bot Azkar Bot
 
 [![invite me](https://img.shields.io/badge/Invite%20me-Add%20the%20bot%20to%20your%20server-brightgreen?style=for-the-badge&logo=discord)](https://discord.com/oauth2/authorize?client_id=1292917810435199086)
 
@@ -10,7 +10,8 @@ A new Node.js project.
 ### Getting Started
 
 This project is a starting point for a discord bot application.
-
+- This project powerd By [DevXorHandler](https://github.com/DevXor-Team/DevXorHandler).
+- Azkar System by [ABO FARGHALY](https://github.com/omar00050).
 
 ### Packages & technologies :
 
