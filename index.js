@@ -9,7 +9,8 @@ registerFont(fontFile, { family: 'Amiri' });
 let client = new DevXor({
   token: process.env.token, // token from your bot
   database: {
-    database_type: "JSON", // "MONGODB"|"Sqlite"|"JSON"|"MySQL"
+    database_type: "MONGO", //Change For JSON || قم بتغيرها ل JSON
+    // "MONGODB"|"Sqlite"|"JSON"|"MySQL"
     MongoDB: {
       database: "DevXor",
       uri: "mongodb://0.0.0.0:27017",
