@@ -2,7 +2,6 @@ const { chunkArray } = require('@root/src/utils/class/utils');
 const sendAzkar = require('@root/src/utils/functions/sendAzkar');
 const sendAyat = require('@root/src/utils/functions/sendAyat'); // دالة لإرسال الآيات
 const sendHadith = require('@root/src/utils/functions/sendHadith'); // دالة لإرسال الآيات
-const UpdateChecker = require('@root/src/utils/class/updateChecker'); // تأكد من وضع المسار الصحيح للكلاس
 const chalk = require('chalk');
 const { ActivityType } = require('discord.js');
 const gr = chalk.hex('#00D100');
@@ -29,7 +28,6 @@ module.exports = {
     client.user.setStatus("dnd");
     client.user.setActivity({ name: `Loading....`, type: ActivityType.Custom });
     setTimeout(() => client.user.setStatus("idle"), 40000);
-    UpdateChecker.checkVersion();
     setInterval(() => {
       let ServersStatus = client.Ayat.size + client.Azkar.size + client.Hadith.size;
       client.user.setActivity({ name: `in ${ServersStatus}/${client.channels.cache.size} Channels`, type: ActivityType.Custom });

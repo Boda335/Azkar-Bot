@@ -36,7 +36,6 @@ module.exports = {
       const embed = new EmbedBuilder()
         .setTitle(`ابدء بقراءة القرآن الكريم`)
         .setColor("White")
-        .setTimestamp()
         .setFooter({ text: config.Copyright.text, iconURL: config.Copyright.logo })
         .setImage("https://b.top4top.io/p_3203axez41.png"); // Add your image URL here
 

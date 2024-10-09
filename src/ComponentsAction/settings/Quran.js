@@ -149,11 +149,11 @@ module.exports = {
         // Create and show the modal for changing category
         const modal = new ModalBuilder()
           .setCustomId('category_modal')
-          .setTitle('تغيير الفئة');
+          .setTitle('تغير السورة');
         
         const categoryInput = new TextInputBuilder()
           .setCustomId('category_input')
-          .setLabel('اكتب اسم الفئة:')
+          .setLabel('اكتب اسم السورة:')
           .setStyle(TextInputStyle.Short);
 
         const row = new ActionRowBuilder().addComponents(categoryInput);
@@ -191,7 +191,7 @@ module.exports = {
           pageIndex = 0; // Reset to the first page of the new category
           await sendEmbed(modalInteraction, pageIndex, categoryIndex);
         } else {
-          await modalInteraction.reply({ content: 'هذه الفئة غير موجودة.', ephemeral: true });
+          await modalInteraction.reply({ content: '**Surah not found | لم يتم العثور على السورة **', ephemeral: true });
         }
       } else if (modalInteraction.customId === 'page_modal') {
         const pageNumber = parseInt(modalInteraction.fields.getTextInputValue('page_input'));
@@ -210,10 +210,10 @@ module.exports = {
             pageIndex = currentPage; // Set the page index for the selected category
             await sendEmbed(modalInteraction, pageIndex, categoryIndex);
           } else {
-            await modalInteraction.reply({ content: 'رقم الصفحة غير صالح.', ephemeral: true });
+            await modalInteraction.reply({ content: '❌**Invalid page number | رقم الصفحة غير صالح**', ephemeral: true });
           }
         } else {
-          await modalInteraction.reply({ content: 'يرجى إدخال رقم صحيح بين 1 و 604.', ephemeral: true });
+          await modalInteraction.reply({ content: '⚠️**Please enter a valid number between 1 and 604 | يرجى إدخال رقم صحيح بين 1 و 604**', ephemeral: true });
         }
       }
     });

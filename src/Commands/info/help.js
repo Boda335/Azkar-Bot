@@ -27,7 +27,7 @@ function help(interaction) {
     })
 
   let btnInvite = new ButtonBuilder()
-    .setURL(`https://discord.com/oauth2/authorize?client_id=1110669204295790703`)
+    .setURL(`https://discord.com/oauth2/authorize?client_id=1292917810435199086`)
     .setStyle("Link")
     .setLabel("Invite Me")
   let btnRadio = new ButtonBuilder()
